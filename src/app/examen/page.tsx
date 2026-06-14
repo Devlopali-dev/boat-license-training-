@@ -171,6 +171,7 @@ export default function ExamenPage() {
 
       {currentQuestion && (
         <QuestionCard
+          key={currentQuestion.id}
           question={currentQuestion}
           questionNumber={currentIndex + 1}
           totalQuestions={questions.length}
