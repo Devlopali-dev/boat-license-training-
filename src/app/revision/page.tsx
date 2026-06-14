@@ -109,6 +109,7 @@ export default function RevisionPage() {
       {/* Question */}
       {current ? (
         <QuestionCard
+          key={current.id}
           question={current}
           questionNumber={currentIndex + 1}
           totalQuestions={filtered.length}
